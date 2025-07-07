@@ -30,7 +30,7 @@
 - Real-time dashboard for user input and prediction
 - Auto-generated evaluation results
 
-📊 Dashboard Preview
+📊 Dashboard Preview:
 🔗 Run locally via streamlit run Week_5_Streamlit_App.py
 
 Features:
