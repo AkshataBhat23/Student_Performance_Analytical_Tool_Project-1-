@@ -41,15 +41,15 @@ plt.ylabel("Predicted G3")
 plt.title("Actual vs Predicted G3 Score")
 plt.legend()
 plt.tight_layout()
-#plt.savefig("actual_vs_predicted.png")
+plt.savefig("actual_vs_predicted.png")
 plt.show()
 
-# import json
+import json
 
 # Save feature columns
-#with open("model_features.json", "w") as f:
-#    json.dump(list(X.columns), f)
+with open("model_features.json", "w") as f:
+    json.dump(list(X.columns), f)
 
 # Save the better model (assume RF for now)
-# joblib.dump(rf, "rf_model.pkl")
-# print("✅ Model saved as 'rf_model.pkl'")
+joblib.dump(rf, "rf_model.pkl")
+print("✅ Model saved as 'rf_model.pkl'")
